@@ -67,15 +67,15 @@ def implement_xor() -> nn.Module:
 
         # Make predictions 
         # Implement your code here
-        predictions = model(X)
+        predictions = model(X) 
 
         # calculate the loss
-        loss = criterion(predictions, Y)
+        loss = criterion(predictions, Y) 
 
-        # Backpropagation
-        loss.backward()
+        # Backpropagation 
+        loss.backward()  
 
-        # Update the weights
+        # Update the weights 
         optimizer.step()
 
     return model
